@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create an Account</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="src/form1.css">
+</head>
+
+<body>
+  <form action="javascript:">
+    <h1>Create an Account</h1>
+    
+    <label>First Name
+      <input type="text" name="firstname" required>
+    </label>
+
+    <label>Last Name
+      <input type="text" name="lastname" required>
+    </label>
+
+    <label>E-mail
+      <input type="email" name="email" required>
+    </label>
+
+    <p>We'll never share your email with anyone else.</p>
+
+    <label>
+      <input type="radio" name="gender" value="male">
+      <span>Male</span>
+    </label>
+
+    <label>
+      <input type="radio" name="gender" value="female">
+      <span>Female</span>
+    </label>
+
+    <label>Country
+      <select name="country">
+        <option value="select" disabled hidden selected>Select</option>
+        <option value="usa">USA</option>
+        <option value="canada">Canada</option>
+        <option value="uk">UK</option>
+        <option value="australia">Australia</option>
+      </select>
+    </label>
+
+    <label> City
+      <input type="text" name="city">
+    </label>
+
+    <button>Sign Up</button>
+
+    <p>By clicking the 'Sign Up' button, you confirm that you accept our
+      <a href="#">Terms of Use</a> and
+      <a href="#">Privacy Policy</a>.
+    </p>
+    <hr>
+
+    <footer>
+      <p>Have an account?</p>
+      <a href="form2.html">Log In</a>
+    </footer>
+
+  </form>
+</body>
+
+</html>
