@@ -1,0 +1,60 @@
+form {
+  background: #fff;
+  display: grid;
+  grid-template-columns: auto 1fr 49%;
+  gap: 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+  box-sizing: border-box;
+  margin: 20px auto;
+  width: 570px;
+  height: 590px;
+
+  h1 {
+    font-family: var(--font-family);
+    grid-column: span 3;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: #1c1c1c;
+  }
+
+  >img { 
+    border-radius: 50%;
+    width: 80px;
+    aspect-ratio: 1;
+
+  }
+
+  label{
+    display: grid;
+    align-content: start;
+  }
+
+  label:has([type="file"]) {
+    position: relative;
+
+    &::after {
+      content: url("icons/camera.svg");
+      position: absolute;
+      top: 1px;
+      right: 3px;
+    }
+  }
+
+  [type="file"]+input {
+    pointer-events: none;
+  }
+
+  label:has([name="name"], [name="country"], [name="zip"]),
+  button:last-child {
+    grid-column: span 2;
+  }
+
+  button {
+    place-self: start;
+  }
+  
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="src/styles.css">
+  <link rel="stylesheet" href="src/form2.css">
+</head>
+
+<body>
+  <main>
+    <form action="">
+
+      <h1>Profile</h1>
+
+      <img src="src/image.png" alt="Profile Picture">
+
+      <label>
+        <input type="file" hidden>
+        <input type="text" placeholder="Upload Photo">
+        Up to 1 MB (300x300 px)
+      </label>
+
+      <button><img src="src/icons/trash.svg" alt="trash"> </button>
+
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        <span>E-mail</span>
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        <span>Country</span>
+        <select name="country">
+          <option value="select" disabled hidden selected>Select</option>
+          <option value="usa">USA</option>
+          <option value="canada">Canada</option>
+          <option value="uk">UK</option>
+          <option value="australia">Australia</option>
+        </select>
+      </label>
+
+      <label>
+        <span>City</span>
+        <input type="text" name="city" required>
+      </label>
+
+      <label>
+        <span>Zip Code</span>
+        <input type="number" name="zip" required>
+      </label>
+
+      <label>
+        <span>Phone Number</span>
+        <input type="text" name="phone" required>
+      </label>
+
+      <button>Update</button>
+    </form>
+  </main>
+</body>
+
+</html>

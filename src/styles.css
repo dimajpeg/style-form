@@ -2,7 +2,10 @@
   --font-family: 'Roboto', sans-serif;
   --second-family: "Inter", sans-serif;
 }
-
+body {
+  background: #f7f7f7;
+  font-family: var(--font-family);
+}
 main {
   display: flex;
   flex-direction: column;
