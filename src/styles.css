@@ -13,3 +13,8 @@ main {
   justify-content: center;
 
 }
+:not(:checked)+.radio-on, 
+:checked~.radio-off,
+[type="radio"]{
+  display: none;
+}
