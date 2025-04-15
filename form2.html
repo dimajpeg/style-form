@@ -17,51 +17,52 @@
 
       <img src="src/image.png" alt="Profile Picture">
 
-      <label>
+      <label class="upload-label">
         <input type="file" hidden>
-        <input class="up" type="text" placeholder="Upload Photo">
-        Up to 1 MB (300x300 px)
+        <input type="text" placeholder="Upload Photo">
+        <span class="file-info">Up to 1 MB (300x300 px)</span>
       </label>
 
       <button class="trash"><img src="src/icons/trash.svg" alt="trash"> </button>
 
-      <label>
+      <label class="up">
         <span>Name</span>
         <input type="text" name="name" required>
       </label>
 
-      <label>
+      <label class="up">
         <span>E-mail</span>
         <input type="email" name="email" required>
       </label>
 
-      <label>
+      <label class="up">
         <span>Country</span>
-        <select name="country">
-          <option value="select" disabled hidden selected>Select</option>
+        <select name="country" required>
+          <option value="" disabled selected hidden>Select</option>
           <option value="usa">USA</option>
           <option value="canada">Canada</option>
           <option value="uk">UK</option>
           <option value="australia">Australia</option>
         </select>
+        
       </label>
 
-      <label>
+      <label class="up">
         <span>City</span>
         <input type="text" name="city" required>
       </label>
 
-      <label>
+      <label class="up">
         <span>Zip Code</span>
         <input type="number" name="zip" required>
       </label>
 
-      <label>
+      <label class="up">
         <span>Phone Number</span>
         <input type="text" name="phone" required>
       </label>
 
-      <button>Update</button>
+      <button class="lower">Update</button>
     </form>
   </main>
 </body>

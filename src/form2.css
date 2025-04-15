@@ -11,8 +11,9 @@ form {
   width: 570px;
   height: 590px;
 
+
   h1 {
-    font-family: var(--font-family);
+    font-family: var(--second-family);
     grid-column: span 3;
     font-weight: 500;
     font-size: 24px;
@@ -23,22 +24,21 @@ form {
   }
 
   >img {
+    margin-bottom: 20px;
     border-radius: 50%;
     width: 80px;
     aspect-ratio: 1;
 
   }
-  
-  .up {
-    width: 138px;
-    height: 30px;
-
-    
-  }
 
   .trash {
     width: 30px;
     height: 30px;
+    margin-top: 11px;
+    margin-left: 10px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
   }
 
 
@@ -52,9 +52,76 @@ form {
     letter-spacing: -0.01em;
     color: #545454;
 
+  }
+
+  .upload-label {
+    width: 138px;
+    margin-top: 11px;
+    margin-left: 20px;
+  }
+
+  .upload-label input[type="text"] {
+    height: 30px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .upload-label .file-info {
+    margin-top: 9px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 138%;
+    letter-spacing: -0.01em;
+    color: #969696;
+    white-space: nowrap;
 
 
   }
+
+  label.up {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 245px;
+    height: 67px;
+    font-family: var(--font-family);
+    font-size: 15px;
+    line-height: 147%;
+    color: #545454;
+  }
+
+  label.up input,
+  label.up select {
+    height: 38px;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 147%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: var(--font-family);
+  }
+  select:invalid {
+    color: #545454;
+    opacity: 0.4;
+
+    
+  }
+  
+
+
+
+  input[placeholder="Upload Photo"] {
+    font-family: var(--second-family);
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 138%;
+    color: #545454;
+    opacity: 0.4;
+  }
+
 
   label:has([type="file"]) {
     position: relative;
@@ -62,8 +129,8 @@ form {
     &::after {
       content: url("icons/camera.svg");
       position: absolute;
-      top: 1px;
-      right: 3px;
+      top: 4px;
+      left: 118px;
     }
   }
 
@@ -80,4 +147,49 @@ form {
     place-self: start;
   }
 
+  label:has([name="name"], [name="zip"], [name="country"],
+  ) {
+    grid-column: span 3;
+  }
+
+}
+
+
+input[name="name"],
+[name="email"],
+[name="zip"],
+[name="city"],
+[name="phone"] {
+  width: 245px;
+  height: 38px;
+}
+
+
+
+option[value="select"] {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 147%;
+  letter-spacing: -0.01em;
+  color: #545454;
+}
+
+
+button {
+  width: 150px;
+  height: 38px;
+}
+
+.lower {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 147%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+  background: #027BFF;
+  border-radius: 5px;
+  border: 1px solid #E4E4E4;
 }
