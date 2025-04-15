@@ -12,12 +12,12 @@
 <body>
   <form action="javascript:">
     <h1>Create an Account</h1>
-    
-    <label>First Name
+
+    <label class="up">First Name
       <input type="text" name="firstname" required>
     </label>
 
-    <label>Last Name
+    <label class="up">Last Name
       <input type="text" name="lastname" required>
     </label>
 
@@ -37,9 +37,11 @@
       <span>Female</span>
     </label>
 
-    <label>Country
-      <select name="country">
-        <option value="select" disabled hidden selected>Select</option>
+
+    <label class="up">
+      <span>Country</span>
+      <select name="country" required>
+        <option value="" disabled selected hidden>Select</option>
         <option value="usa">USA</option>
         <option value="canada">Canada</option>
         <option value="uk">UK</option>
@@ -47,13 +49,13 @@
       </select>
     </label>
 
-    <label> City
+    <label class="up"> City
       <input type="text" name="city">
     </label>
 
     <button>Sign Up</button>
 
-    <p>By clicking the 'Sign Up' button, you confirm that you accept our
+    <p>By clicking the 'Sign Up' button, you confirm that you accept our<br>
       <a href="#">Terms of Use</a> and
       <a href="#">Privacy Policy</a>.
     </p>

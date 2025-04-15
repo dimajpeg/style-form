@@ -103,14 +103,13 @@ form {
     border-radius: 4px;
     font-family: var(--font-family);
   }
+
   select:invalid {
     color: #545454;
     opacity: 0.4;
 
-    
-  }
-  
 
+  }
 
 
   input[placeholder="Upload Photo"] {
@@ -152,44 +151,40 @@ form {
     grid-column: span 3;
   }
 
-}
+  input[name="name"],
+  [name="email"],
+  [name="zip"],
+  [name="city"],
+  [name="phone"] {
+    width: 245px;
+    height: 38px;
+  }
+
+  option[value="select"] {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 147%;
+    letter-spacing: -0.01em;
+    color: #545454;
+  }
 
 
-input[name="name"],
-[name="email"],
-[name="zip"],
-[name="city"],
-[name="phone"] {
-  width: 245px;
-  height: 38px;
-}
+  button {
+    width: 150px;
+    height: 38px;
+  }
 
-
-
-option[value="select"] {
-  font-family: var(--second-family);
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 147%;
-  letter-spacing: -0.01em;
-  color: #545454;
-}
-
-
-button {
-  width: 150px;
-  height: 38px;
-}
-
-.lower {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 147%;
-  letter-spacing: -0.01em;
-  text-align: center;
-  color: #fff;
-  background: #027BFF;
-  border-radius: 5px;
-  border: 1px solid #E4E4E4;
+  .lower {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 147%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #fff;
+    background: #027BFF;
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+  }
 }
