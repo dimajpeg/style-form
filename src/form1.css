@@ -65,10 +65,8 @@ form {
     letter-spacing: -0.01em;
     color: #545454;
   }
-
   select:invalid {
-    color: #545454;
-    opacity: 0.4;
+    color: #878686;
   }
 
   p {
