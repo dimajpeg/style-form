@@ -1,0 +1,20 @@
+:root {
+  --font-family: 'Roboto', sans-serif;
+  --second-family: "Inter", sans-serif;
+}
+body {
+  background: #f7f7f7;
+  font-family: var(--font-family);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+:not(:checked)+.radio-on, 
+:checked~.radio-off,
+[type="radio"]{
+  display: none;
+}
